@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagyasri - Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('laptop.jpg'); /* Add your background image here */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Reduced height */
+            margin-top: 20vh; /* Adjust this to move the container down */
+        }
+        .content {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .jobs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .job {
+            margin: 10px;
+            min-width: 200px;
+        }
+        .job p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .resume-link {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #0073e6;
+            font-size: 16px;
+        }
+        .resume-link .icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-left: 2px solid #0073e6;
+            border-bottom: 2px solid #0073e6;
+            transform: rotate(-45deg);
+            margin-left: 5px;
+        }
+        .resume-link .icon::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid #0073e6;
+            border-right: 2px solid #0073e6;
+            position: relative;
+            top: 5px;
+            left: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="pic2.png" alt="Your Image" style="width: 90px; max-width: 600px; margin-bottom: 20px;">
+            <h1>Experience and Volunteering in Tech, Startups, and Non-profits</h1>
+            <div class="jobs">
+                <div class="job">
+                    <p><strong>Front End Developer</strong></p>
+                    <p>Ioninks, Visakhapatnam</p>
+                </div>
+                <div class="job">
+                    <p><strong>Zero Trust Cloud Security Virtual Internship</strong></p>
+                    <p>Zscaler, Virtual</p>
+                </div>
+                <div class="job">
+                    <p><strong>Recipient of Advanced Scholarship</strong></p>
+                    <p>AWS AI/ML SCHOLARSHIP, Summer Cohort'24</p>
+                </div>
+                <div class="job">
+                    <p><strong>Volunteering</strong></p>
+                    <p>Member, Women Who Code</p>
+                </div>
+                <div class="job">
+                    <p><strong>Volunteering</strong></p>
+                    <p>Member, AIMERS - GVPCEW</p>
+                </div>
+                <div class="job">
+                    <p><strong>Contributor</strong></p>
+                    <p>Crowdsource, Google India</p>
+                </div>
+            </div>
+            <a href="Bhagilu_resume.pdf" download class="resume-link">Download my resume<span class="icon"></span></a>
+        </div>
+    </div>
+</body>
+</html>

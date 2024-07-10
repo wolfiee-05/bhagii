@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bhagyasriuddandam - portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav ul li a.active {
+            color: #3b82f6;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .intro, .post {
+            margin-bottom: 40px;
+        }
+
+        .intro p, .post p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .post .category {
+            color: #3b82f6;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .post h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .post h1 a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .post img {
+            width: auto;
+            max-width: 60%; /* Limit maximum width to 40% of its container */
+            height: auto;
+            max-height: 300px;
+            margin-top: 5px;
+            margin-left: 400px; /* Move image slightly to the right */
+            /* Alternatively, you can use float: right; to align the image to the right */
+            /* float: right; */
+        }
+
+        .learn-more {
+            display: block;
+            margin-top: 10px;
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .github-link {
+            text-align: center; /* Center align the content */
+            margin-top: 40px; /* Adjust spacing from the intro text */
+        }
+
+        .github-link img {
+            width: 100px; /* Set the size of the GitHub icon */
+            height: 100px;
+            margin-bottom: 10px; /* Spacing between icon and text */
+        }
+
+        .click-me {
+            margin-top: 10px; /* Adjust spacing between text and arrow */
+            font-weight: bold; /* Make the text bold */
+        }
+
+        .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #333; /* Color of the arrow */
+            margin: 5px auto; /* Center align the arrow */
+        }
+
+        .post h2.category {
+            font-size: 18px; /* Increase font size */
+        }
+        .certifications-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .certifications-list li {
+            margin-bottom: 10px;
+        }
+
+        .certifications-list li a {
+            text-decoration: none;
+            color: #9ec5ed;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .certifications-list li a:hover {
+            color: #0d0d0e;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a id="featured-tab" class="active">Featured</a></li>
+            <li><a id="github-tab">Github</a></li>
+            <li><a id="blog-tab">Research Paper</a></li>
+            <li><a id="certif-tab">Certifications & Licences</a></li>
+            <li><a href="index.html">Homepage</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="featured-section" class="content-section active">
+            <section class="post">
+                <h2 class="category">MACHINE LEARNING</h2>
+                <h1><a href="#" target="_blank">HAND WRITTEN DIGIT CLASSIFIER WITH PYTORCH</a></h1>
+                <p>This repository contains code and resources for building a Handwritten Digits Classifier using PyTorch. The goal of this project is to prototype a system for optical character recognition (OCR) on handwritten characters, specifically focusing on the MNIST database of handwritten digits.</p>
+                <p><strong>Project Overview</strong></p>
+                <p>As a machine learning engineer, I have been tasked with providing a proof of concept for the OCR system.</p>
+                <p>In this project, I preprocessed the MNIST dataset, built and trained a neural network using PyTorch, and fine-tuned the model for optimal performance.</p>
+                <a class="learn-more" href="https://github.com/BhagyasriUddandam/HandWrittenDigitClassifierwithPytorch" target="_blank">Learn more →</a>
+                <img src="handwritten.jpeg" alt="Handwritten Digit Classifier with PyTorch">
+            </section>
+        </section>
+
+        <section id="github-section" class="content-section">
+            <div class="github-link">
+                <a href="https://github.com/BhagyasriUddandam" target="_blank">
+                    <img src="github.png" alt="GitHub Profile">
+                </a>
+                <p class="click-me">Click me</p>
+                <div class="arrow-up"></div>
+                <p>My GitHub contains some public and private repositories. Hope it helps!</p>
+            </div>
+        </section>
+
+        <section id="blog-section" class="content-section">
+            <div class="intro">
+                <p>Following up on my interests in <strong>Machine learning</strong> and <strong>Big Data</strong>, I explore various topics through research and practical applications. One such exploration is detailed in the paper titled:</p>
+            </div>
+            <div class="post">
+                <h2 class="category">Machine Learning Exploration of Bank Marketing Data with Apache Spark - IJRASET [PAPER ID: IJRASE8T61287]</h2>
+                <p>Banks leverage advanced analytics provided by Apache Spark to enhance customer service and optimize marketing strategies. This paper integrates machine learning techniques to gain insights into consumer behavior through predictive modeling and efficient data processing. Key topics include customer segmentation, predictive modeling, and personalized marketing. PySpark's user-friendly interface and Spark's scalability support tactics related to growth, customer acquisition, and retention.</p>
+                <p>Keywords: Banks, Machine Learning, Predictive Modeling, Client Behavior, Marketing Strategies, Personalized Marketing, Data Processing, Scalability.</p>
+                <p><a class="learn-more" href="https://www.ijraset.com/best-journal/machine-learning-exploration-of-bank-marketing-data-with-apache-spark" target="_blank">Read the research paper →</a></p>
+                <img src="image0 (4).jpeg" alt="Certificate of Recognition">
+                <p><a href="doc.pdf" download>Download the PDF of the paper</a></p>
+            </div>
+        </section>
+
+        <section id="certif-section" class="content-section">
+            <div class="intro">
+                <p>View credentials for my certifications and licenses:</p>
+                <ul>
+                    <li><a href="https://www.udacity.com/certificate/e/f391c0da-6c23-11ee-a7fe-57e94299f15e" target="_blank">AI Programming with Python Nanodegree (UDACITY)</a></li>
+                    <li><a href="https://verify.skilljar.com/c/2h3qyy35sh4f" target="_blank">Zscaler Cybersecurity Fundamentals Associate Course License</a></li>
+                    <li><a href="https://www.linkedin.com/learning/certificates/588e75fec88408f64b3ee7acceace52871cba928763dd6a4c910e05a88e87809" target="_blank">Career Essentials in Data Analysis by Microsoft and LinkedIn</a></li>
+                    <li><a href="https://www.cloudskillsboost.google/public_profiles/6c1dce21-eed0-4198-b4a8-d000af632751" target="_blank">Completed Google Cloud Career Practitioners Campaign (GCCP) pathway in Cloud skills boost</a></li>
+                    <li><a href="https://www.linkedin.com/learning/certificates/4162b52e807e98d23cb20ad700542ac99d1ef2a6e0a593b8d0ab7dd22120db71" target="_blank">Certification in Cybersecurity with Cloud Computing from International Institute of Business Analytics</a></li>
+                    <li><a href="https://www.udemy.com/certificate/UC-74a6f464-a288-4c1c-bd0d-59b2e1f6032e/" target="_blank">GCP for Beginners - Become a Google Cloud Digital Leader</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        document.getElementById('featured-tab').addEventListener('click', function() {
+            showSection('featured-section');
+            setActiveTab(this);
+        });
+
+        document.getElementById('github-tab').addEventListener('click', function() {
+            showSection('github-section');
+            setActiveTab(this);
+        });
+
+        document.getElementById('blog-tab').addEventListener('click', function() {
+            showSection('blog-section');
+            setActiveTab(this);
+        });
+
+        document.getElementById('certif-tab').addEventListener('click', function() {
+            showSection('certif-section');
+            setActiveTab(this);
+        });
+
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function setActiveTab(activeTab) {
+            document.querySelectorAll('nav ul li a').forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+            activeTab.classList.add('active');
+        }
+    </script>
+</body>
+</html>
